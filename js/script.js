@@ -12,4 +12,11 @@ const viewer = new PANOLENS.Viewer({
 viewer.add(panorama);
 viewer.addViewIndicator();
 viewer.getControl().rotateLeft(4.75);
-viewer.getControl().rotateUp(0);
+viewer.getControl().rotateUp(-0.05);
+
+
+const container = document.querySelector(".container");
+container.addEventListener("load", displayPano());
+function displayPano() {
+    container.style.display="none"
+  }
