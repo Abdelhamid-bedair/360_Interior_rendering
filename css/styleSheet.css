@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
 }
-.pano-image {
 
+.pano-image {
+    display: grid;
     width: 100%;
     height: 100vh;
 }
